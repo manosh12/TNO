@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import {Avatar} from "@nextui-org/react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header.jsx";
+import { Home } from "./pages/home/Home.jsx";
+import {Footer} from "./components/Footer.jsx";
 
 function App() {
-
   return (
-    <>
-      <div className="flex gap-3 items-center">
-        <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d"/>
-        <Avatar name="Junior"/>
-        <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d"/>
-        <Avatar name="Jane"/>
-        <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026702d"/>
-        <Avatar name="Joe"/>
-      </div>
-    </>
-  )
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
