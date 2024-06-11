@@ -1,31 +1,26 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
-import {Link} from "react-router-dom";
-import '../App.css';
-import {TopScroll} from "./TopScroll.jsx";
-export const Header = ()  =>{
+import React, { useEffect } from "react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { Link } from "react-router-dom";
+import '../App.css'; // Make sure your CSS file is set up to handle custom styles.
+import { TopScroll } from "./TopScroll.jsx";
+
+export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    { name: "HOME", link: "/" },
+    { name: "GREETING", link: "/#intro" },
+    { name: "BUSINESS CONTENT", link: "/business-content" },
+    { name: "CONTACT US", link: "/#contact" },
   ];
 
+  const handleMenuClose = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
         <NavbarBrand>
           <Link to="/" onClick={TopScroll}>
             <p className="font-bold text-inherit">
@@ -35,41 +30,36 @@ export const Header = ()  =>{
             </p>
           </Link>
         </NavbarBrand>
-      </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-10 justify-end">
-        <NavbarItem>
-          <Link to="/" className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
-            ホーム
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link to={"/#intro"} className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700">
-            ご挨拶
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link to="/business-content" className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
-            事業内容
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link to={"/#contact"} className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
-            お問い合せ
-          </Link>
-        </NavbarItem>
+        <NavbarContent className="hidden sm:flex gap-10 justify-end">
+          {menuItems.map((item, index) => (
+            <NavbarItem key={index} isActive={index === 0}>
+              <Link
+                to={item.link}
+                className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700"
+                onClick={TopScroll}
+              >
+                {item.name}
+              </Link>
+            </NavbarItem>
+          ))}
+        </NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="ml-auto sm:hidden"
+        />
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={index} className="mobile-menu-item">
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
+              to={item.link}
               className="w-full"
-              href="#"
-              size="lg"
+              onClick={() => {
+                handleMenuClose();
+                TopScroll();
+              }}
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

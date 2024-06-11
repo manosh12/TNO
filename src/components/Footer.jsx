@@ -27,18 +27,18 @@ export const Footer = () => {
                   <ul className="list-unstyled">
                     <li>
                       <Link to="/"
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>ホーム</Link>
+                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>HOME</Link>
                     </li>
                     <li>
                       <Link to={"/#intro"}
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">ご挨拶</Link>
+                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">GREETING</Link>
                     </li>
                     <li>
                       <Link to="/business-content"
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>業務内容</Link>
+                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>BUSINESS CONTENT</Link>
                     </li>
                     <li>
-                      <Link to={"/#contact"} className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">お問い合わせ</Link>
+                      <Link to={"/#contact"} className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">CONTACT US</Link>
                     </li>
                   </ul>
                 </div>
@@ -65,7 +65,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-blueGray-300"/>
+          <hr className="my-6 border-cyan-700 border-1"/>
         </div>
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">

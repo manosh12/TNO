@@ -29,7 +29,8 @@ export const Business_content = () => {
           }}
         >
           <div className="text-center font-serif">
-            <h1 className="text-2xl text-white">事業内容</h1>
+            <h1 className="text-3xl text-white">事業内容</h1>
+            <span className="text-sm text-white">(Business Content)</span>
           </div>
         </div>
 
