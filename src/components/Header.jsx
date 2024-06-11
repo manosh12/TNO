@@ -1,6 +1,8 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import {Link} from "react-router-dom";
+import '../App.css';
+import {TopScroll} from "./TopScroll.jsx";
 export const Header = ()  =>{
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -17,7 +19,6 @@ export const Header = ()  =>{
     "Log Out",
   ];
 
-
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -26,27 +27,33 @@ export const Header = ()  =>{
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">
-            <span className="text-3xl font-serif">T</span>eam
-            <span className="text-3xl font-serif ml-2">N</span>ext
-            <span className="text-3xl font-serif ml-2">O</span>ne
-          </p>
+          <Link to="/" onClick={TopScroll}>
+            <p className="font-bold text-inherit">
+              <span className="text-3xl font-serif text-red-700">T</span>eam
+              <span className="text-3xl font-serif ml-2 text-red-700">N</span>ext
+              <span className="text-3xl font-serif ml-2 text-red-700">O</span>ne
+            </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
-
-      <NavbarContent className="hidden sm:flex gap-10" justify="end">
+      <NavbarContent className="hidden sm:flex gap-10 justify-end">
         <NavbarItem>
-          <Link color="foreground" href="#" className="font-bold text-lg font">
+          <Link to="/" className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
             ホーム
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link color="foreground" href="" className="font-bold text-lg font">
+          <Link to={"/#intro"} className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700">
             ご挨拶
           </Link>
         </NavbarItem>
+        <NavbarItem isActive>
+          <Link to="/business-content" className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
+            事業内容
+          </Link>
+        </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className="font-bold text-lg font">
+          <Link to={"/#contact"} className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700" onClick={TopScroll}>
             お問い合せ
           </Link>
         </NavbarItem>
