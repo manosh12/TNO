@@ -42,14 +42,14 @@ export const Home = () => {
         {/* Greeting Section */}
         <div className="container mx-auto max-w-5xl my-10 rounded-[5px] pt-7" id="intro">
           <Title title="ご挨拶"/>
-          <div className="grid sm:grid-cols-2 gap-10 mx-5 mt-20">
+          <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-20">
             <div className="mx-2">
-              <h4 className="text-3xl">MESSAGE</h4>
+              <h4 className="text-2xl font-bold">MESSAGE</h4>
               <p className="text-sm py-2 text-warning-500">CEOメッセージ</p>
               <div className="mt-5">
                 <h1 className="text-md text-gray-600">
-                  私共、<span className="text-warning font-bold text-2xl">Team Next One</span>
-                  は課題を抱えている個人から企業に至るまで皆様方の様々な依頼を受け専門家としてその解決に向けたサポート事業を主に行っています
+                  私共、<span className="text-warning font-bold text-2xl">Team Next One </span>
+                   は課題を抱えている個人から企業に至るまで皆様方の様々な依頼を受け専門家としてその解決に向けたサポート事業を主に行っています
                   <p className="mt-5">個人・業界又分野によって課題は異なりますが依頼されている問題を細分化しそれに対する改善策をチームで提案を行い実施し解決していきます</p>
                   <p className="my-5">チームが一つになってサポートして行きますので是非問題解決に向けた外部資源の活用をご利用ください</p>
                   <p>皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
@@ -58,7 +58,7 @@ export const Home = () => {
               </div>
             </div>
             <div>
-              <img src="/images/team.png" className="w-[450px] h-450px]"/>
+              <img src="/images/team.png" className="w-[350px] h-350px] mt-10"/>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export const Home = () => {
         <div className="bg-gradient-to-r from-cyan-700 via-sky-900 to-cyan-700 py-2 mt-20">
           <div className="container mx-auto max-w-7xl my-10 rounded-[5px] pt-7">
             <h1 className="text-3xl text-center text-white">Team Next One 業務内容</h1>
-            <p className="text-center mt-3 text-white">皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
+            <p className="text-center mt-3 text-white mx-5">皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mx-5 mt-10 items-center">
               {businessContent.map((contentList, index) => (
