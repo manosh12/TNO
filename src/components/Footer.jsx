@@ -27,18 +27,26 @@ export const Footer = () => {
                   <ul className="list-unstyled">
                     <li>
                       <Link to="/"
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>HOME</Link>
+                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                            onClick={TopScroll}>HOME</Link>
                     </li>
                     <li>
                       <Link to={"/#intro"}
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">GREETING</Link>
+                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">ご挨拶</Link>
+                    </li>
+                    <li>
+                      <Link to="/company-info"
+                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                            onClick={TopScroll}>会社概要</Link>
                     </li>
                     <li>
                       <Link to="/business-content"
-                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" onClick={TopScroll}>BUSINESS CONTENT</Link>
+                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                            onClick={TopScroll}>業務内容</Link>
                     </li>
                     <li>
-                      <Link to={"/#contact"} className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">CONTACT US</Link>
+                      <Link to={"/#contact"}
+                            className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">お問い合わせ</Link>
                     </li>
                   </ul>
                 </div>

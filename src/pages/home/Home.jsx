@@ -27,7 +27,7 @@ export const Home = () => {
       <div className="home">
         {/* Background Section */}
         <div
-          className="relative bg-fixed flex flex-col justify-center items-center w-full h-[70vh] bg-cover bg-no-repeat"
+          className="relative bg-fixed flex flex-col justify-center items-center w-full lg:h-[70vh] h-[50vh] bg-cover bg-no-repeat"
           style={{
             backgroundImage: `linear-gradient(rgba(16, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url("${homeImg}")`,
           }}
@@ -44,7 +44,7 @@ export const Home = () => {
           <Title title="ご挨拶"/>
           <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-20">
             <div className="mx-2">
-              <h4 className="text-2xl font-bold">MESSAGE</h4>
+              <h4 className="text-2xl font-bold text-gray-600">MESSAGE</h4>
               <p className="text-sm py-2 text-warning-500">CEOメッセージ</p>
               <div className="mt-5">
                 <h1 className="text-md text-gray-600">
@@ -79,7 +79,7 @@ export const Home = () => {
                            alt={contentList.title}/>
                     </CardHeader>
                     <CardBody className="text-center py-2">
-                      <h4 className="font-bold text-sm pt-2">{contentList.title}</h4>
+                      <h4 className="font-bold text-sm pt-2 text-gray-600">{contentList.title}</h4>
                     </CardBody>
                   </Card>
                 </Link>
@@ -155,19 +155,19 @@ export const Home = () => {
                 </p>
               </div>
               <Card className="text-center my-10 py-10 shadow-lg" radius="sm">
-                <div className="text-2xl font-bold mb-4">【各種お問い合わせ先】</div>
+                <div className="text-2xl font-bold mb-4 text-gray-600">【各種お問い合わせ先】</div>
                 <h1 className="mt-5 text-md lg:mx-40 mx-5">〒812-0011 福岡市博多区駅前４丁目 18-19博多フロントビル2階205号</h1>
                 <p className="ml-7 text-md mt-3"><span className="text-red-700 font-bold">TNO</span>ソリューション株式会社（月～金：9：00 ～ 17：00 ※祝祭日を除く）
                 </p>
                 <div className="text-left mt-5 ml-auto mr-auto max-w-lg">
                   <div className="flex items-center mb-2">
-                    <FaPhoneFlip className="mr-2"/> <span className="flex-1">TEL：092（409）8609</span>
+                    <FaPhoneFlip className="mr-2 text-2xl text-cyan-600"/> <span className="flex-1">TEL：092（409）8609</span>
                   </div>
-                  <div className="flex items-center mb-2">
-                    <FaFax className="mr-2"/> <span className="flex-1">FAX：092-089-8612</span>
+                  <div className="flex items-center my-5">
+                    <FaFax className="mr-2 text-2xl text-cyan-600"/> <span className="flex-1">FAX：092-089-8612</span>
                   </div>
                   <div className="flex items-center">
-                    <FaMailBulk className="mr-2"/> <span className="flex-1">メール：tnosolution.cc@gmail.com</span>
+                    <FaMailBulk className="mr-2 text-2xl text-cyan-600"/> <span className="flex-1">メール：tnosolution.cc@gmail.com</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center mt-6 lg:mb-0 mb-6">
