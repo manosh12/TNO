@@ -23,6 +23,7 @@ export const Footer = () => {
             </div>
             <div className="w-full lg:w-6/12 px-4">
               <div className="flex flex-wrap items-top mb-6">
+                <hr className="block lg:hidden border-cyan-700 border-1 w-full mt-5 mb-3"/>
                 <div className="w-full lg:w-4/12 px-4 ml-auto text-white">
                   <ul className="list-unstyled">
                     <li>
@@ -50,6 +51,7 @@ export const Footer = () => {
                     </li>
                   </ul>
                 </div>
+                <hr className="block lg:hidden border-cyan-700 border-1 w-full mt-5 mb-3"/>
                 <div className="w-full lg:w-4/12 px-4 text-white">
                   <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">CONTACT</span>
                   <ul className="list-unstyled">
@@ -73,7 +75,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-cyan-700 border-1"/>
+          <hr className="my-4 border-cyan-700 border-1 mx-4"/>
         </div>
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
