@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import '../App.css'; // Make sure your CSS file is set up to handle custom styles.
+import '../App.css';
 import { TopScroll } from "./TopScroll.jsx";
 
 export const Header = () => {
@@ -9,9 +9,10 @@ export const Header = () => {
 
   const menuItems = [
     { name: "HOME", link: "/" },
-    { name: "GREETING", link: "/#intro" },
-    { name: "BUSINESS CONTENT", link: "/business-content" },
-    { name: "CONTACT US", link: "/#contact" },
+    { name: "ご挨拶", link: "/#intro" },
+    { name: "会社概要", link: "/company-info" },
+    { name: "業務内容", link: "/business-content" },
+    { name: "お問い合わせ", link: "/#contact" },
   ];
 
   const handleMenuClose = () => {
@@ -35,7 +36,7 @@ export const Header = () => {
             <NavbarItem key={index} isActive={index === 0}>
               <Link
                 to={item.link}
-                className="nav-link font-bold text-lg text-gray-800 hover:text-cyan-700"
+                className="nav-link font-bold text-md text-gray-800 hover:text-cyan-700"
                 onClick={TopScroll}
               >
                 {item.name}

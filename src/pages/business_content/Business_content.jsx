@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import homeImg from '/images/busness_content.jpg';
+import homeImg from '/images/business_idea.jpg';
 import { Title } from "../../components/Title.jsx";
 import { NumberTitle } from "../../components/NumberTitle.jsx";
 import data from "../../data/data.json";
@@ -30,7 +30,7 @@ export const Business_content = () => {
         >
           <div className="text-center font-serif">
             <h1 className="text-3xl text-white">事業内容</h1>
-            <span className="text-sm text-white">(Business Content)</span>
+            <span className="text-sm text-warning">(Business Content)</span>
           </div>
         </div>
 

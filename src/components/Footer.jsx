@@ -71,7 +71,7 @@ export const Footer = () => {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-blueGray-500 font-semibold py-1 text-white">
               Copyright ©
-              <span id="get-current-year">2024</span>TNOソリューション株式会社
+              <span id="get-current-year">2024</span> TNOソリューション株式会社
             </div>
           </div>
         </div>

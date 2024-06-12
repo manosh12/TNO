@@ -154,7 +154,7 @@ export const Home = () => {
                   また、電話でのお問い合わせも承っておりますので、本社までご連絡ください。
                 </p>
               </div>
-              <Card className="text-center my-10 py-10" radius="sm">
+              <Card className="text-center my-10 py-10 shadow-lg" radius="sm">
                 <div className="text-2xl font-bold mb-4">【各種お問い合わせ先】</div>
                 <h1 className="mt-5 text-md lg:mx-40 mx-5">〒812-0011 福岡市博多区駅前４丁目 18-19博多フロントビル2階205号</h1>
                 <p className="ml-7 text-md mt-3"><span className="text-red-700 font-bold">TNO</span>ソリューション株式会社（月～金：9：00 ～ 17：00 ※祝祭日を除く）
