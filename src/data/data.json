@@ -63,5 +63,26 @@
       "content":"プライベートな課題をお持ちの方 状況をご相談下さ い内容を元に問題解決に向けて最適な専門家とチーム でサポート致します お気軽にご相談下さい",
       "img":"/images/consultation.png"
     }
+  ],
+
+  "contact": [
+    {
+      "id": 1,
+      "title": "PHONE",
+      "content": "090-1111-2222",
+      "img": "/images/phone.svg"
+    },
+    {
+      "id": 2,
+      "title": "FAX",
+      "content": "090-1111-5555",
+      "img": "/images/fax.svg"
+    },
+    {
+      "id": 3,
+      "title": "EMAIL",
+      "content": "admin@example.com",
+      "img": "/images/email.svg"
+    }
   ]
 }
