@@ -43,7 +43,7 @@ export const Business_content = () => {
                 <div key={contentList.id}
                   className={`flex flex-col sm:flex-row ${isEven ? 'sm:flex-row' : 'sm:flex-row-reverse'} gap-5`} id={contentList.number}>
                   {/* Image Container */}
-                  <div className="flex justify-center items-center w-full sm:w-1/2 mt-20">
+                  <div className="flex justify-center items-center w-full sm:w-1/2 lg:mt-20 mt-10">
                     <img
                       src={contentList.img}
                       className="w-40 h-40 object-cover rounded-md"
@@ -52,12 +52,12 @@ export const Business_content = () => {
                   </div>
 
                   {/* Content Details */}
-                  <div className="mt-20 w-full sm:w-1/2 flex flex-col justify-center">
+                  <div className="lg:mt-20 mt-14 w-full sm:w-1/2 flex flex-col justify-center">
                     <div className="font-bold flex justify-start items-center mb-2">
                       <NumberTitle number={contentList.number} />
                       <span className="text-2xl ml-2">{contentList.title}</span>
                     </div>
-                    <p className="mt-7">{contentList.content}</p>
+                    <p className="mt-3 text-justify">{contentList.content}</p>
                   </div>
                 </div>
               );

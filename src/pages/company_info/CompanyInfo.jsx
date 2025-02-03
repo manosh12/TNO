@@ -21,66 +21,39 @@ export const CompanyInfo = () => {
 
         <div className="container mx-auto max-w-5xl rounded-[5px] mb-20 text-gray-600">
           <Title title="経営理念"/>
-          <div className="">
-            現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて変化する日々の流れにも負けずに次は必ずある昨日より明日今日より明日へと向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です
-          </div>
-          <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-10">
-            <div className="mx-2">
-              <div className="flex justify-center items-center">
-                <img src="/images/team.png" className="w-[130px] h-130px] mt-10"/>
-              </div>
-              <h1 className="text-md text-center mt-3 text-lg font-bold">喜劇王チャップリン</h1>
-              <p className="mt-3"> ある記者から貴方の最高傑作はと聞かれ <span className="text-xl">「<span
-                className="text-red-700 font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです</p>
-            </div>
-            <div className="mx-2">
-              <div className="flex justify-center items-center">
-                <img src="/images/construct.png" className="w-[130px] h-130px] mt-10"/>
-              </div>
-              <h1 className="text-md text-center mt-3 text-lg font-bold">経営学者ドラッカー</h1>
-              <p className="mt-3"> 今まで書いた数十冊の本の中でどの本が一番良い と思いますかと聞かれ <span
-                className="text-xl">「<span className="text-red-700 font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです
-              </p>
-            </div>
+          <div className="mx-5 text-xl">
+            現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて変化する日々の流れにも負けずに次は必ずある昨日より明日今日より明日へと向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です。
           </div>
 
           {/*COMPANY INFO(会社概要)*/}
-          <div className="my-20">
+          <div className="lg:my-20">
             <Title title="会社概要"/>
-            <div className="mx-4 mt-5">
-              <table className="tb-01 mb-10 w-full">
+            <div className="mx-4">
+              <table className="tb-01 lg:mb-10 w-full">
                 <tbody>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">社名</th>
                   <td>ＴＮＯソリューション株式会社</td>
                 </tr>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">設立</th>
                   <td>2022年06月20日</td>
                 </tr>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">代表者</th>
-                  <td>山田 太郎</td>
+                  <td>丹野 敬栄</td>
                 </tr>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">法人番号</th>
                   <td>7290001097934</td>
                 </tr>
-                <tr className="">
-                  <th className="py-5 font-bold text-lg">資本金</th>
-                  <td>1000万</td>
-                </tr>
-                <tr className="">
-                  <th className="py-5 font-bold text-lg">従業員数</th>
-                  <td>50人</td>
-                </tr>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">郵便番号</th>
-                  <td>〒 812-0011</td>
+                  <td>〒812-0011</td>
                 </tr>
-                <tr className="">
+                <tr className="text-xl">
                   <th className="py-5 font-bold text-lg">本社住所</th>
-                  <td> 福岡県福岡市博多区博多駅前４丁目１８番１９号</td>
+                  <td>福岡市博多区博多駅前４丁目１８-１９ 博多フロントビル２０５</td>
                 </tr>
                 </tbody>
               </table>
@@ -88,20 +61,21 @@ export const CompanyInfo = () => {
           </div>
 
           {/*company address (業務場所）*/}
-          <Card className="py-5 shadow-lg text-gray-600" radius="sm">
+          <Card className="py-8 mt-6 shadow-lg mx-4 text-gray-600" radius="sm">
             <Title title="事業所案内"/>
-            <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-10">
+            <div className="grid sm:grid-cols-2 gap-20 mx-5 lg:mt-10">
               <div className="mx-2">
-               <h4 className="text-lg font-bold">福岡本社</h4>
+               <h4 className="font-bold text-2xl">福岡本社</h4>
                 <div className="mt-5">
-                  <p className="font-bold">【所在地】</p>
-                  <p className="mt-3">〒 812-0011</p>
-                  <p className="my-1">福岡県福岡市博多区博多駅前４丁目１８番１９号</p>
-                  <p>TEL : 092（409）8609</p>
-                  <p>FAX : 092-089-8612</p>
+                  <p className="font-bold text-2xl">所在地</p>
+                  <p className="mt-3 text-xl">〒812-0011</p>
+                  <p className="my-1 text-xl">福岡市博多区博多駅前４丁目１８-１９ 博多フロントビル２０５</p>
+                  <p className='text-xl mt-2'>TEL : 092-409-8609</p>
+                  <p className='text-xl'>携帯 : 080-3155-1540</p>
+                  <p className='text-xl'>FAX : 092-089-8612</p>
                   <div className="mt-7">
-                    <p className="font-bold">【アクセス】</p>
-                    <p>・博多駅より徒歩３分</p>
+                    <p className="font-bold text-2xl">アクセス</p>
+                    <p className='text-xl'>・博多駅より徒歩５分</p>
                   </div>
                 </div>
               </div>
