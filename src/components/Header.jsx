@@ -6,7 +6,6 @@ import { TopScroll } from "./TopScroll.jsx";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
   const menuItems = [
     { name: "HOME", link: "/" },
     { name: "ご挨拶", link: "/#intro" },
@@ -36,7 +35,7 @@ export const Header = () => {
             <NavbarItem key={index} isActive={index === 0}>
               <Link
                 to={item.link}
-                className="nav-link font-bold text-md text-gray-800 hover:text-cyan-700"
+                className="nav-link font-bold text-lg hover:text-red-700"
                 onClick={TopScroll}
               >
                 {item.name}

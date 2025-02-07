@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import homeImg from '/images/company.jpg';
+import homeImg from '/images/main.jpg';
 import { Title } from "../../components/Title.jsx";
 import {Card, CardBody, CardHeader} from "@nextui-org/react";
 import {Link, useLocation} from "react-router-dom";
@@ -9,11 +9,10 @@ import {Contact} from "../../components/Contact.jsx";
 
 export const Home = () => {
   const businessContent = data.businessContent;
-
   const location = useLocation();
 
   useEffect(() => {
-    const hash = location.hash.substring(1); // Remove the '#' from the hash
+    const hash = location.hash.substring(1);
     const element = document.getElementById(hash);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -28,7 +27,7 @@ export const Home = () => {
         <div
           className="relative bg-fixed flex flex-col justify-center items-center w-full lg:h-[70vh] h-[50vh] bg-cover bg-no-repeat"
           style={{
-            backgroundImage: `linear-gradient(rgba(16, 0, 0, 0.5), rgba(3, 3, 3, 0.5)), url("${homeImg}")`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 3, 3, 0.5)), url("${homeImg}")`,
           }}
         >
           <div className="text-center font-serif">
@@ -43,10 +42,10 @@ export const Home = () => {
           <Title title="ご挨拶"/>
           <div className="grid sm:grid-cols-2 gap-20 mx-5 lg:mt-20">
             <div className="mx-2">
-              <h4 className="text-2xl font-bold text-gray-600">MESSAGE</h4>
+              <h4 className="text-2xl font-bold">MESSAGE</h4>
               <p className="text-sm text-warning-500">CEOメッセージ</p>
               <div className="lg:mt-5 mt-2">
-                <h1 className="text-xl text-gray-600">
+                <h1 className="text-xl text-justify">
                   私共、 
                   <span className="font-bold text-inherit">
                   <span className="text-2xl font-serif text-red-700">T</span>eam
@@ -60,13 +59,13 @@ export const Home = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <img src="/images/team.png" className="lg:w-[400px] lg:h-[400px] lg:mt-24 w-[300px] h-[300px]"/>
+              <img src="/images/team.png" className="lg:w-[400px] lg:h-[400px] lg:mt-10 w-[300px] h-[300px]"/>
             </div>
           </div>
         </div>
 
         {/* Business Content Section */}
-        <div className="bg-gradient-to-r from-cyan-700 via-sky-900 to-cyan-700 py-2 mt-20">
+        <div className="bg-gradient-to-r from-gray-800 via-gray-500 to-gray-800 py-2 mt-10">
           <div className="container mx-auto max-w-7xl lg:my-10 my-5 rounded-[5px] pt-7">
             <h1 className="text-3xl text-center text-white">Team Next One 業務内容</h1>
             <p className="text-center mt-3 text-white mx-5 text-xl">皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
@@ -81,7 +80,7 @@ export const Home = () => {
                            alt={contentList.title}/>
                     </CardHeader>
                     <CardBody className="text-center py-2">
-                      <h4 className="font-bold text-sm pt-2 text-gray-600">{contentList.title}</h4>
+                      <h4 className="text-md pt-2">{contentList.title}</h4>
                     </CardBody>
                   </Card>
                 </Link>
@@ -91,13 +90,14 @@ export const Home = () => {
         </div>
 
         {/* TeamNextOne の理念 */}
-        <div className="container mx-auto max-w-5xl lg:my-10 rounded-[5px] pt-7 text-gray-600">
+        <div className="container mx-auto max-w-5xl lg:my-10 rounded-[5px] pt-7">
           <Title title="TeamNextOneの理念"/>
-          <div className="mx-5 text-xl">
-            現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて
-            変化する日々の流れにも負けずに 次は必ずある昨日より明日今日より明日へと
-            向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です
-
+          <div className="mx-5">
+            <p className="text-xl font-bold">
+              現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて
+              変化する日々の流れにも負けずに 次は必ずある昨日より明日今日より明日へと
+              向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です
+            </p>
             <div className="mt-7">
               <h4 className="text-xl text-warning-500 font-bold">喜劇王チャップリン</h4>
               <p className="mt-3"> ある記者から貴方の最高傑作はと聞かれ <span className="text-xl">「<span className="font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです</p>
@@ -107,9 +107,8 @@ export const Home = () => {
               <p className="mt-3"> 今まで書いた数十冊の本の中でどの本が一番良い と思いますかと聞かれ <span className="text-xl">「<span className="font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです
               </p>
             </div>
-
-            <div className="mt-20 text-gray-600">
-              <h4 className="font-bold my-3">ソリューションの提案から実行まで</h4>
+            <div className="mt-20">
+              <h4 className="font-bold text-xl my-3">ソリューションの提案から実行まで</h4>
               <div className="mt-5 flex justify-start">
                 <img src="/images/circle.png" alt="circle" className="w-6 h-6"/>
                 <p className="ml-3">依頼・相談</p>

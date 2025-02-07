@@ -28,7 +28,7 @@ export const Top = () => {
       <div
         className={`${showButton ? 'bottom-10' : '-bottom-10'} fixed right-10 transition-bottom duration-300 hidden lg:block`}>
         {showButton && (
-          <Button isIconOnly className="bg-cyan-600 border-0  h-14 w-14" variant="faded" size="sm" radius="full" onClick={TopScroll}>
+          <Button isIconOnly className="bg-gray-400 border-0  h-14 w-14" variant="faded" size="sm" radius="full" onClick={TopScroll}>
             <FaChevronUp className="text-white font-bold text-2xl"/>
           </Button>
         )}

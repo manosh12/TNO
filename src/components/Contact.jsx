@@ -3,7 +3,6 @@ import {Card, CardBody, CardHeader} from "@nextui-org/react";
 import data from "../data/data.json"
 
 export const Contact = () => {
-
   const contactData = data.contact;
 
   return (
@@ -21,17 +20,16 @@ export const Contact = () => {
             <img src="/images/circle.png" alt="circle" className="w-6 h-6"/>
             <p className="ml-3">有資格者等による定めのある業務については、 有資格者が行います</p>
           </div>
-          <div className="mt-20">
+          <div className="lg:mt-20 mt-5">
             <p> サービスのお問い合わせは下記のフォームをご利用願います。なお、お問い合わせいただいた内容によっては、
               ご連絡までお時間がかかるものがございます。あらかじめご了承ください。
               また、電話でのお問い合わせも承っておりますので、本社までご連絡ください。
             </p>
           </div>
-          <Card className="text-center my-10 py-10 shadow-lg" radius="sm">
-            <div className="text-2xl font-bold mb-4 text-gray-600">【各種お問い合わせ先】</div>
+          <Card className="text-center lg:my-10 lg:py-10 my-2 py-7 shadow-lg" radius="sm">
+            <div className="text-xl font-bold mb-4">【各種お問い合わせ先】</div>
             <h1 className="mt-5 text-md lg:mx-40 mx-5">〒812-0011 福岡市博多区駅前４丁目
               18-19博多フロントビル2階205号</h1>
-          
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5 mx-5 mt-20 items-center lg:mx-20">
               {contactData.map((contentList, index) => (
                 <Card className="py-6 shadow-2xl rounded-md transition-transform duration-300 hover:-translate-y-2"
@@ -47,8 +45,8 @@ export const Contact = () => {
                     </div>
                   </CardHeader>
                   <CardBody className="text-center py-2">
-                    <h4 className="font-bold text-xl pt-2 text-gray-600">{contentList.title}</h4>
-                    <h4 className="text-md pt-4 text-gray-600">{contentList.content}</h4>
+                    <h4 className="font-bold text-xl pt-2">{contentList.title}</h4>
+                    <h4 className="text-md pt-4">{contentList.content}</h4>
                   </CardBody>
                 </Card>
               ))}
