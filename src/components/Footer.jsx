@@ -34,8 +34,8 @@ export const Footer = () => {
         </div>
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold mt-5 text-white">
-              Copyright ©<span id="get-current-year">2024</span> TNOソリューション株式会社
+            <div className="text-sm text-blueGray-500 font-semibold mt-5 text-gray-400">
+              Copyright ©<span id="get-current-year">2025</span> TNOソリューション株式会社. All Rights Reserved
             </div>
           </div>
         </div>
