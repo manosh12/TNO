@@ -65,7 +65,7 @@ export const Home = () => {
         </div>
 
         {/* Business Content Section */}
-        <div className="bg-gradient-to-r from-gray-800 via-gray-500 to-gray-800 py-2 mt-10">
+        <div className="bg-gradient-to-r from-gray-400 via-gray-600 to-gray-400 py-2 mt-10">
           <div className="container mx-auto max-w-7xl lg:my-10 my-5 rounded-[5px] pt-7">
             <h1 className="text-3xl text-center text-white">Team Next One 業務内容</h1>
             <p className="text-center mt-3 text-white mx-5 text-xl">皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
@@ -93,7 +93,7 @@ export const Home = () => {
         <div className="container mx-auto max-w-5xl lg:my-10 rounded-[5px] pt-7">
           <Title title="TeamNextOneの理念"/>
           <div className="mx-5">
-            <p className="text-xl font-bold">
+            <p className="text-xl font-bold text-justify">
               現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて
               変化する日々の流れにも負けずに 次は必ずある昨日より明日今日より明日へと
               向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です

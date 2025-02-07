@@ -22,7 +22,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <div className="flex flex-col sm:flex-row lg:mt-10 mt-5 mb-12 justify-center lg:gap-20 gap-5">
+            <div className="flex flex-col sm:flex-row lg:mt-10 mt-5 mb-12 justify-center lg:gap-10 gap-5">
               <Link to="/" onClick={TopScroll} className="cursor-pointer text-white text-xl hover:text-red-700">HOME</Link>
               <Link to="/#intro" className="cursor-pointer text-white text-xl hover:text-red-700">ご挨拶</Link>
               <Link to="/company-info" onClick={TopScroll} className="cursor-pointer text-white text-xl hover:text-red-700">会社概要</Link>

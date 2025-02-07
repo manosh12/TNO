@@ -21,7 +21,7 @@ export const CompanyInfo = () => {
 
         <div className="container mx-auto max-w-5xl rounded-[5px] mb-20">
           <Title title="経営理念"/>
-          <div className="mx-5 text-xl">
+          <div className="mx-5 text-xl text-justify">
             現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて変化する日々の流れにも負けずに次は必ずある昨日より明日今日より明日へと向上心を持ち未来へ向かって多くの人達を笑顔にする事が私達チームの社会貢献であり理念です。
           </div>
 

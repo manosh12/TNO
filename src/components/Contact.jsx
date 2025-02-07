@@ -20,7 +20,7 @@ export const Contact = () => {
             <img src="/images/circle.png" alt="circle" className="w-6 h-6"/>
             <p className="ml-3">有資格者等による定めのある業務については、 有資格者が行います</p>
           </div>
-          <div className="lg:mt-20 mt-5">
+          <div className="lg:mt-20 mt-5 text-justify">
             <p> サービスのお問い合わせは下記のフォームをご利用願います。なお、お問い合わせいただいた内容によっては、
               ご連絡までお時間がかかるものがございます。あらかじめご了承ください。
               また、電話でのお問い合わせも承っておりますので、本社までご連絡ください。
@@ -30,25 +30,26 @@ export const Contact = () => {
             <div className="text-xl font-bold mb-4">【各種お問い合わせ先】</div>
             <h1 className="mt-5 text-md lg:mx-40 mx-5">〒812-0011 福岡市博多区駅前４丁目
               18-19博多フロントビル2階205号</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5 mx-5 mt-20 items-center lg:mx-20">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5 mx-5 mt-10 items-center lg:mx-20">
               {contactData.map((contentList, index) => (
-                <Card className="py-6 shadow-2xl rounded-md transition-transform duration-300 hover:-translate-y-2"
+                <div className="rounded-md transition-transform duration-300"
                       key={index}>
-                  <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-                    <div className="relative">
-                      <div
-                        className="w-16 h-16 border-2 border-gray-300 rounded-full overflow-hidden flex items-center justify-center p-2 shadow-2xl">
-                        <img src={contentList.img}
-                             className="w-full h-full object-cover transition-transform duration-300 rounded-full"
-                             alt={contentList.title}/>
+                  <div className="pb-0 pt-2 px-4 flex-col items-center justify-center">
+                    <div className="relative flex items-center justify-center">
+                      <div className="w-16 h-16 border-2 rounded-full overflow-hidden flex items-center justify-center p-2">
+                        <img 
+                          src={contentList.img} 
+                          className="w-full h-full object-cover transition-transform duration-300 rounded-full" 
+                          alt={contentList.title} 
+                        />
                       </div>
                     </div>
-                  </CardHeader>
-                  <CardBody className="text-center py-2">
+                  </div>
+                  <div className="text-center py-2">
                     <h4 className="font-bold text-xl pt-2">{contentList.title}</h4>
                     <h4 className="text-md pt-4">{contentList.content}</h4>
-                  </CardBody>
-                </Card>
+                  </div>
+                </div>
               ))}
             </div>
           </Card>
