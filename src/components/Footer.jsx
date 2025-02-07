@@ -11,13 +11,9 @@ export const Footer = () => {
           <div className="flex flex-wrap lg:text-left">
             <div className="w-full lg:w-6/12 lg:px-4">
               <h4 className="text-3xl fonat-semibold text-white">
-                <Link to="/" onClick={TopScroll}>
-                  <p className="font-bold text-inherit text-sm">
-                    <span className="text-3xl font-serif text-red-700">T</span>eam
-                    <span className="text-3xl font-serif ml-2 text-red-700">N</span>ext
-                    <span className="text-3xl font-serif ml-2 text-red-700">O</span>ne
-                  </p>
-                </Link>
+                  <Link to="/" onClick={TopScroll}>
+                    <p className="font-bold text-inherit mt-2 text-2xl">TNOソリューション株式会社</p>
+                  </Link>
               </h4>
             </div>
           </div>

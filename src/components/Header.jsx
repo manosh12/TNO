@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import logo from "/images/logo.png";
 import '../App.css';
 import { TopScroll } from "./TopScroll.jsx";
 
@@ -22,12 +23,9 @@ export const Header = () => {
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
-          <Link to="/" onClick={TopScroll}>
-            <p className="font-bold text-inherit">
-              <span className="text-3xl font-serif text-red-700">T</span>eam
-              <span className="text-3xl font-serif ml-2 text-red-700">N</span>ext
-              <span className="text-3xl font-serif ml-2 text-red-700">O</span>ne
-            </p>
+          <Link to="/" onClick={TopScroll} className="flex items-center gap-2">
+          <img src={logo} alt="logo" className="w-12 h-12 rounded-full" />
+            <p className="font-bold text-inherit mt-2 text-lg">TNOソリューション株式会社</p>
           </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-10 justify-end">
