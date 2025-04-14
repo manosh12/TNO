@@ -46,11 +46,7 @@ export const Home = () => {
               <p className="text-sm text-warning-500">CEOメッセージ</p>
               <div className="lg:mt-5 mt-2">
                 <h1 className="text-xl text-justify">
-                  私共、 
-                  <span className="font-bold text-inherit">
-                  <span className="text-2xl font-serif text-red-700">T</span>eam
-                  <span className="text-2xl font-serif ml-2 text-red-700">N</span>ext
-                  <span className="text-2xl font-serif ml-2 text-red-700">O</span>ne</span> は課題を抱えている個人から企業に至るまで皆様方の様々な依頼を受け専門家としてその解決に向けたサポート事業を主に行っています。
+                  私共、は課題を抱えている個人から企業に至るまで皆様方の様々な依頼を受け専門家としてその解決に向けたサポート事業を主に行っています。
                   <p className="lg:my-3 my-2">個人・業界又分野によって課題は異なりますが依頼されている問題を細分化しそれに対する改善策をチームで提案を行い実施し解決していきます。</p>
                   <p className="lg:my-3 my-2">チームが一つになってサポートして行きますので是非問題解決に向けた外部資源の活用をご利用ください。</p>
                   <p>皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
