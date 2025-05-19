@@ -63,7 +63,7 @@ export const Home = () => {
         {/* Business Content Section */}
         <div className="bg-gradient-to-r from-gray-400 via-gray-600 to-gray-400 py-2 mt-10">
           <div className="container mx-auto max-w-7xl lg:my-10 my-5 rounded-[5px] pt-7">
-            <h1 className="text-3xl text-center text-white">Team Next One 業務内容</h1>
+            <h1 className="text-3xl text-center text-white">The Next One 業務内容</h1>
             <p className="text-center mt-3 text-white mx-5 text-xl">皆様方の笑顔から全てが始まります次の誰かのために笑顔を繋ぎます今日も一日良い日になりますように</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mx-5 mt-10 items-center">
@@ -85,9 +85,9 @@ export const Home = () => {
           </div>
         </div>
 
-        {/* TeamNextOne の理念 */}
+        {/* TheNextOne の理念 */}
         <div className="container mx-auto max-w-5xl lg:my-10 rounded-[5px] pt-7">
-          <Title title="TeamNextOneの理念"/>
+          <Title title="TheNextOneの理念"/>
           <div className="mx-5">
             <p className="text-xl font-bold text-justify">
               現状に満足する事なく明日への自分を信じて次の一歩をふみ出し新たな出会いを求めて
@@ -96,11 +96,11 @@ export const Home = () => {
             </p>
             <div className="mt-7">
               <h4 className="text-xl text-warning-500 font-bold">喜劇王チャップリン</h4>
-              <p className="mt-3"> ある記者から貴方の最高傑作はと聞かれ <span className="text-xl">「<span className="font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです</p>
+              <p className="mt-3"> ある記者から貴方の最高傑作はと聞かれ <span className="text-xl">「<span className="font-bold">The Next One</span>」</span>(次の作品)と答えたそうです</p>
             </div>
             <div className="mt-7">
               <h4 className="text-warning-500 font-bold">経営学者ドラッカー</h4>
-              <p className="mt-3"> 今まで書いた数十冊の本の中でどの本が一番良い と思いますかと聞かれ <span className="text-xl">「<span className="font-bold">Team Next One</span>」</span>(次の作品)と答えたそうです
+              <p className="mt-3"> 今まで書いた数十冊の本の中でどの本が一番良い と思いますかと聞かれ <span className="text-xl">「<span className="font-bold">The Next One</span>」</span>(次の作品)と答えたそうです
               </p>
             </div>
             <div className="mt-20">
